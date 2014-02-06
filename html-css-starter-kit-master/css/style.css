@@ -1,0 +1,180 @@
+/* Stylesheet template */
+
+body {
+  background-color: #F8F8FF;
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;  
+  font-size: 14px;  
+  line-height: 1.5em;  
+  margin: 0;
+  padding: 0; 
+}
+
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+
+/* Create a container to set the width of your page content and the margins. */
+.container {
+	margin: auto;  /* Setting the margin to auto will automatically center it in the browser */
+	width: 960px;  /* 960 px is a common width for desktop websites. */
+}
+
+/* main class was assigned to the div for the main content area of your page */
+.main {
+	float: left;  /* float pulls the element to the right or left */
+	width: 600px;
+	padding:0 15px;  /* Adds 0 padding to top and bottom and 30px padding to the right and left */
+}
+  
+/* --------  Navigation Bar  ---------- */
+nav {
+  background-color: #333333;  /* sets the color of the navigation bar to a charcoal grey */
+  color: #F8F8FF;  /* Ghostwhite, same as the background color. */
+  height: 40px;  /* Sets the height of the navbar */
+	margin: 0 0 0 0;  /* Zero out the margins and padding */
+	padding: 0 0 0 0;
+}
+
+nav ul {
+	padding: 12px 0 0 0; /* eliminate the default ul padding, but creates some from the top */
+	list-style: none;  /* gets rid of the bullet point */
+}
+
+nav ul li{
+	display: inline;  /* displays the list inline rather than verticle */
+}
+
+nav ul li a {
+  background-color: #474747;    /* changes the link area to a slightly lighter color */
+	padding: 20px 20px 5px 20px;  /* sets the area around the link */
+	font-size: 1.3em;  /* Increases the size of the letters to 1.3 times the base size */
+	font-weight: bold;  /* Makes the link letters bold */
+	text-decoration: none;  /* gets rid of the underline in the link */
+	color: #F8F8FF;  /* changes the link color from blue to ghostwhite */
+}
+
+/* Change the background-color and text color when the mouse hovers over the link */
+nav li a:hover {
+	color: #ffffff;
+	background-color: #5C5C5C;
+}
+  
+/* ------------- Sidebar ------------------ */
+aside{
+  float: right;  /* float pulls the element to the right or left */
+  width: 180px;  /* Remember to factor in the box model which includes margins and padding */
+  padding: 15px 25px 25px 25px;  /* Adds 15px padding to top and 25px to the rt, bottom and lt */
+  color: #6c6c6c; /* changes the text color from charcoal grey to grey */
+  font-family:Tahoma, Geneva, sans-serif;  
+  background-color:#eff3f0;  /* changes the background color of the whole sidebar */
+}
+
+/* Change font-family of the title and center the text */
+aside h2{
+  font-family:Trebuchet MS1, Helvetica, sans-serif;
+  text-align: center; 
+ } 
+
+aside hr {
+  border-color: #6c6c6c;
+} 
+ 
+aside ul {
+  padding: 0; /* eliminate the default ul padding */
+  list-style: none;  /* gets rid of the bullet point */
+}
+
+aside ul li {
+  padding: 5px;  /* sets the padding around each list element */
+}
+
+aside ul li a {
+  padding-left: 20px;  /* sets the distance from the left edge for each link */
+  font-size: 1.2em;  /* Increases the size of the letters to 1.3 times the base size */
+  font-weight: bold;  /* Makes the link letters bold */
+  text-decoration: none;  /* gets rid of the underline in the link */
+  color: #6c6c6c; /* changes the link color from blue to grey */
+}
+
+/* Change the links when the user's mouse hovers over them */
+aside li a:hover {
+  color:#666699;
+  text-decoration: underline;  
+}  
+
+/* ------------- Footer ------------------ */
+footer {
+  clear: both;  /* Ensures the element doesn't float to the left or right of any other element. */
+	text-align: center;  
+  background-color: #333333;
+  color: #F8F8FF;  /* Ghostwhite, same as the background color. */
+  height: 40px;  /* Sets the height of the navbar */
+	padding: 15px 0 0 0;
+}
+
+/* ------------- Images ------------------ */
+#img1 {
+  width: 385px;
+  height: 279px;
+}
+
+#img2 {
+  width: 385px;
+  height: 223px;
+  /* border: 0;  /* Images with a hyperlink have a 1px border by default. Set border to 0 to eliminate it. */  
+}
+
+#img3 {
+  width: 322px;
+  height: 251px;
+  float: left;
+  padding: 20px;
+  border: 1px solid #333333;
+  margin: 20px;
+}
+
+/* ------------- Lists ------------------ */
+ 
+ul {
+  list-style-type: square; /* disc is default. Other options: circle, square, none */
+}
+
+ol {
+  list-style-type: lower-alpha; /* decimal is default. Other options: lower-alpha, upper-alpha, lower-roman, upper-roman */
+}
+
+/* ------------- Tables ------------------ */
+table { 
+  border-collapse: collapse;  /* Elimates the space between the borders. */
+  background-color: #eff3f0;   
+  /* width: 100%;   /* To set a width other than the default, you can use % (of the element's width) or px. */
+}
+
+/* Set the table header rows/columns a different style */
+th {
+  background-color: #5C5C5C;
+  color: #F8F8FF;
+}
+
+/* To assign the same style rules to multiple selectors, list them separated by commas  */
+table, th, tr, td {
+  border: 3px solid #333333;  /* use the shorthand border property to set width, style and color at once */
+  padding: 0 10px;  /* we are using the shorthand padding dimensions setting top/bottom at 0, right/lt at 10px */
+  text-align: center;  /* if you want the table content to be centered use text-align */
+}

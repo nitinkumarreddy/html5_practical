@@ -1,0 +1,198 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8">
+    <title>Page Title</title> <!-- Title appears on tab of web browser -->
+    <!-- The below metadata is optional. It is useful for search engines -->
+    <meta name="description" content="description of your page">
+    <meta name="author" content="Author Name if relevant">    
+    <meta name="keywords" content="put, keywords, here, separated, by commas"> 
+    
+    <!-- Link to the CSS Stylesheet. Use the relative path to the style.css file in the css folder -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/> 
+  </head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <ul class="container">
+        <li><a href="#">Home</a></li>
+        <li><a href="contact/">Contact</a></li>
+      </ul>
+    </nav>
+  
+  
+  <div class="container">
+    <div class="main">
+      <header>
+        <h1>HTML and CSS Basics Template</h1>  
+        <p>Use this as example HTML markup to copy and paste to your web projects</p>
+      </header>
+    
+      <!-- Text -->
+      <h3 id="text">Text</h3>
+      <p>Introductory Paragraph goes here. Include text formatting such as <strong>strong</strong>, <b>bold</b>, <em>emphasis</em>, <i>italic for different voice or mood</i>, and <u>underline</u>. 
+      
+      
+      <!-- Hyperlinks -->
+      <h3 id="link">Hyperlinks</h3>
+      Now add a hyperlink to another website <a href="http://google.com">google.com</a>. Now add a link that opens in a new window <a href="http://google.com" target="_blank">google.com</a></p>
+      <p>At the bottom there are more hyperlinks in the aside element (i.e., the sidebar) that link to sections on this page.</p>
+
+      
+      <!-- Lists -->
+      <h3 id="list">Lists</h3>
+      Unordered List Title:
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      Ordered List Title:
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>      
+      
+      
+      <!-- Images -->      
+      <h3 id="image">Images</h3>
+      <p>Insert an image using the figure tags with a caption. 
+        <figure>
+          <img src="img/html-syntax.png" alt="HTML Syntax Image" id="img1">
+          <figcaption>HTML Syntax</figcaption>
+        </figure>  
+      </p>
+      
+      <p>Insert an image here with a hyperlink. Put the image tag inside the anchor tags.<br>
+        <figure>      
+          <a href="http://code.techandstartup.com/reference/css"><img src="img/css-syntax.png" alt="CSS Syntax Image" id="img2"></a>
+          <figcaption>CSS Syntax</figcaption>
+        </figure>  
+      </p>
+      
+      <p>Insert an image here and insert an id attribute for the styling. <img src="img/box-model.png" alt="image" id="img3">.
+      This is text after the image. By using the float property you can have the text appear in the same line as the image. You can adjust the space between the text and the image by adding padding and/or margin around the image. You can add a border around the image using the border property. It is best to save the image to the size you want to display it, then include the actual width and height in the style rule. You can find out the dimensions of an image by right clicking on it and looking in the properties.</p>
+
+
+      <!-- Tables -->
+      <h3 id="table">Tables</h3>
+      <h4>Basic Table:</h4>
+      <table>
+        <tr>
+           <td>cell content</td>
+           <td>cell content</td>
+        </tr>
+        <tr>
+          <td>cell content</td>
+          <td>cell content</td>
+        </tr>
+      </table> 
+     
+      <h4>Full Table:</h4>
+      <table>
+        <caption>Table Caption</caption>
+        <thead>
+          <th></th><th>column header</th><th>column header</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th>row header</th><td>cell content</td><td>cell content</td>
+          </tr>
+          <tr>
+            <th>row header</th><td>cell content</td><td>cell content</td>
+          </tr>
+        </tbody>
+      </table> 
+      
+      
+      <!-- Forms -->
+      <h3 id="form">Forms</h3>  
+      <form action="" method="post">
+        <fieldset>
+        <legend>Form Title</legend>
+      
+        <!-- Input Box (Default size is 20 characters) -->
+        <p>
+          <label for="firstname">First Name:</label> <input type="text" id="firstname" name="firstname"> 
+          <label for="lastname">Last name:</label> <input type="text" id="lastname" name="lastname" size="30"> 
+        </p>
+        
+        <!-- Password field -->
+        <p>
+          <label for="password">Password: <input type="password" id="password" name="pwd">
+        </p>    
+        
+        <!-- Text Box -->
+        <p>
+          <label for="bio">Bio:</label> <textarea rows="10" cols="40" id="bio" name="bio"></textarea>
+        </p>
+        
+        <!-- Radio Buttons -->
+        <p>Gender: 
+          <label for ="male">Male</label> <input type="radio" id="male" name="gender" value="male"> 
+          <label for ="female">Female</label> <input type="radio" id="female" name="gender" value="female">
+        </p>
+        
+        <!-- Select Box (aka Dropdown Box) -->
+        <p>Select County: 
+          <select name="county">
+            <option value="" selected>-------</option>
+            <option value="San Francisco">San Francisco</option>
+            <option value="San Mateo">San Mateo</option>
+            <option value="Palo Alto">Santa Clara</option>
+            <option value="Alameda">Alameda</option>
+            <option value="Marin">Marin</option>
+          </select>
+        </p>
+        
+        <!-- Check Box -->    
+        <p>Select Category: 
+          <label for ="category1">Category 1</label> <input type="checkbox" id="category1" name="category" value="category1"> 
+          <label for ="category2">Category 2</label> <input type="checkbox" id="category2" name="category" value="category2">
+        </p>
+        
+        <!-- Submit and Reset Buttons -->  
+        <p>
+          <input type="submit" name="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </p>
+        </fieldset>
+      </form>
+    </div>  <!-- /.main -->
+    
+    <!-- Sidebar -->  
+    <aside>
+      <h3>Contents</h3>
+      <ul>
+        <li><a href='#text'>&laquo; Text</a></li>
+        <li><a href='#link'>&laquo; Hyperlinks</a></li>
+        <li><a href='#list'>&laquo; Lists</a></li>        
+        <li><a href='#image'>&laquo; Images</a></li>
+        <li><a href='#table'>&laquo; Tables</a></li>
+        <li><a href='#form'>&laquo; Forms</a></li>    
+      </ul>
+      <hr>
+      <h3>Resources</h3>      
+      <ul>
+        <li><a href="http://code.techandstartup.com/learn-html">Learn HTML</a></li>
+        <li><a href="http://code.techandstartup.com/learn-css">Learn CSS</a></li>        
+        <li><a href="http://code.techandstartup.com/learn-bootstrap">Learn Bootstrap</a></li>                     
+        <li><a href="http://www.w3schools.com/">W3 Schools</a></li>
+        <li><a href="http://www.w3schools.com/tags/ref_colorpicker.asp">Color Picker</a></li>
+        <li><a href="http://jsbin.com">JS Bin</a></li>
+        <li><a href="http://csszengarden.com/">CSS Zen Garden</a></li>   
+      </ul>        
+    </aside>  
+
+  </div> <!--/.container -->
+
+  <footer>
+    <div class="footer-style">
+    Copyright &copy; 2013 Mycompany
+    </div>
+  </footer>
+
+</body>
+</html>
